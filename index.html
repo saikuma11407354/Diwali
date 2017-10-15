@@ -1,8 +1,41 @@
 <html>
   <head>
     <title>HAPPY DIWALI</title>
+	<style>
+		*{
+			margin:0;
+			padding:0;
+			border:0;
+		}
+		.mainbody{
+			background-image:url(http://www.happydeepavali2015.com/wp-content/uploads/2016/01/happy-diwali-images-2016.jpg);
+			background-size:100% 100%;
+			background-repeat:no-repeat;
+			background-position:center center;
+			height:100%;
+		}
+		.transbox {
+			background-color: #ffffff;
+			border: 1px solid black;
+			opacity: 0.1;
+			filter: alpha(opacity=20); /* For IE8 and earlier */
+		}
+		.transbox h1 {
+			margin: 0.5%;
+			opacity: 1.0;
+			font-weight: bold;
+			color: black;
+		}
+	</style>
+	<script async src="script.js"></script>
   </head>
-  <body>
-    <H1>TRY</H1>
+  <body >
+	<div class="mainbody">
+		<div class="transbox" >
+			<h1 id="message"></h1>
+		</div>
+		<h1 id="wisher"></h1>
+
+	</div>
   </body>
 </html>
