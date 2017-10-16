@@ -16,7 +16,7 @@ wishes = [
 	'Happy, Happy Diwali! I hope the day has been blessed with the presence of those you love most, and many magical moments!',
 	'HAPPY DIWALI TO YOU! May you celebrate it well. Surrounded by family, friends and lots of love and remember...',
 	'On the precious moment of Diwali I wish you happy Diwali and I pray that you get all your endeavors fulfilled as well as you get lots of gifts and sweets this Diwali...',
-	'This Diwali I wish you get a lot of crackers but you don’t get a match box to lit them. Save environment, so no to crackers...',
+	'This Diwali I wish you get a lot of crackers but you dont get a match box to lit them. Save environment, so no to crackers...',
 	'May you all attain full inner illumination, may the supreme light of lights enlighten your understanding.',
 	'On Diwali, I wanted to send you wishes for a year filled with prosperity, health and lots of fun! Hope you have a happy Diwali!',
 	' With lights dazzling, with love flushing around by your loved ones with loads of fun and joy, and with our loving wishes.',
@@ -32,10 +32,20 @@ message = wishes[Math.floor(Math.random()*wishes.length)];
 elementmsg = document.getElementById('message');
 elementmsg.innerHTML = message;
 elementmsg.align = 'center';
-elementmsg.style = 'color:black;font-size:35px;top:25%;position: fixed;';
+elementmsg.style = 'color:white;font-size:35px;top:25%;position:fixed;text-align:center';
 
 id = getParameterByName('name');
+reqcustom = getParameterByName('nocustomise');
+
 idplacer = document.getElementById('wisher');
-idplacer.innerHTML = "WHISHING YOU BY "+id;
+idplacer.innerHTML = "Your Friend ,<br>"+id;
 idplacer.align = 'center';
-idplacer.style = 'font-size:70px;top:70%;left:50%;position: fixed;';
+idplacer.style = 'font-size:60px;top:70%;left:70%;right:2%;position:fixed;';
+
+setTimeout(function(){
+	if(reqcustom === '1'){
+		confirmation = confirm("Do you want to Wish on Your Name.");
+		if(confirmation)
+		window.location="Customise/index.html";
+	}
+},6000);

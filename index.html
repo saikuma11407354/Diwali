@@ -8,23 +8,24 @@
 			border:0;
 		}
 		.mainbody{
-			background-image:url(http://www.happydeepavali2015.com/wp-content/uploads/2016/01/happy-diwali-images-2016.jpg);
+			background-image:url(http://www.abundancethinkers.in/images/diwali.jpg);
 			background-size:100% 100%;
 			background-repeat:no-repeat;
 			background-position:center center;
 			height:100%;
+			width:100%;
 		}
 		.transbox {
-			background-color: #ffffff;
-			border: 1px solid black;
-			opacity: 0.1;
-			filter: alpha(opacity=20); /* For IE8 and earlier */
+			background: black;
+			border: 0px solid grey;
+			opacity: 1;
+			filter: alpha(opacity=100); /* For IE8 and earlier */
 		}
-		.transbox h1 {
-			margin: 0.5%;
-			opacity: 1.0;
+
+		.transbox p{
 			font-weight: bold;
-			color: black;
+			color: white;
+			opacity: 1;
 		}
 	</style>
 	<script async src="script.js"></script>
@@ -32,9 +33,11 @@
   <body >
 	<div class="mainbody">
 		<div class="transbox" >
-			<h1 id="message"></h1>
+			<p id="message"></p>
 		</div>
-		<h1 id="wisher"></h1>
+		<div class="transbox" >
+			<p id="wisher"></p>
+		</div>
 
 	</div>
   </body>
